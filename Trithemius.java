@@ -108,7 +108,7 @@ public class Trithemius {
     }
 
     public static int decipher(Scanner input, PrintStream output, int initialOffset) {
-        int currentOffset = initialOffset;
+        int currentOffset = (((-1*initialOffset)+26)%26);
         int numChars = 0;        // Number of characters affected
         
         while (input.hasNextLine()) {
